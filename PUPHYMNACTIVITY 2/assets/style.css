@@ -1,0 +1,102 @@
+			@font-face {
+			    font-family: "Lora";
+			    src: url('Lora.woff') format('woff');
+			}
+		    body {
+		        margin: 0;
+	        	padding: 0;
+	        	height: 100vh;
+		    }
+
+		    #lyrics {
+		        width: 45%;
+		        height: 450px;
+		        overflow-y: auto;
+		        border: 1px solid #ccc;
+		        padding: 10px;
+		        scroll-behavior: smooth;
+		        margin-right: 2.5%;
+		        margin-left: 7.5%;
+		        margin-top: 5%;
+		    }
+
+		    #player {
+		    	margin-left:5%;
+		    	margin-top: 5%;
+		    	display: flex;
+	        	flex-direction: column;
+		    }
+
+		    #logo {
+		    	margin: 7.5px;
+		    	height: 75px;
+		    	width: 75px;
+		    }
+
+		    audio {
+		    	width: 100%;
+		    }
+
+		    p {
+		    	font-size: 36px;
+		    	font-family: "Helvetica", sans-serif;
+		    	transition: font-size 0.3s ease;
+		    }
+
+		    .header {
+		    	height: 90px;
+		    	width: 100%;
+		    	background-color: maroon;
+		    	padding: 0px;
+		    	display: flex;
+		    	text-align: center;
+		    	align-items: center;
+		    }
+
+		    .footer {
+		    	height: 90px;
+		    	width: 100%;
+		    	background-color: black;
+		    	padding: 0px;
+
+		    	position: absolute;
+		        bottom: 0;
+		        
+		        text-align: center;
+		    	align-items: center;
+			}
+
+		    .page-body {
+		    	height: calc(100% - 180px);
+		    	display: flex;
+		    	background-image: url('pup-bg.jpg'); 
+		        background-size: cover; 
+		        background-repeat: no-repeat; 
+		        background-position: center;
+		    }
+
+		    #album-picture {
+		    	width: 25vw;
+		    	border: 1px solid rgba(0, 0, 0, 0.5);
+		        border-radius: 5px;
+		        padding: 10px;
+		        margin-bottom: 20px;
+		    }
+
+		    #headtext {
+		    	font-size: 42px;
+		    	font-family: "Lora", sans-serif;
+		    	transition: font-size 0.3s ease;
+		    	color: gold;
+		    }
+
+		    p:hover {
+		        cursor: pointer;
+		    }
+
+		    #foottext {
+		    	font-size: 18px;
+		    	font-family: "Lora", sans-serif;
+		    	color: white;
+		    }
+

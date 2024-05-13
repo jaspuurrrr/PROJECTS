@@ -1,0 +1,827 @@
+<html>  
+  <head>
+    <title>Jake's Coffee Shop</title>
+    <link rel = "stylesheet" type = "text/css" href = "assets/css/style.css">
+  </head>
+  <body>
+    <div class="bg">
+      <img id="loading" class="flip" src="assets/img/logo1.png">
+      <div id="container" style="display: none;">
+        <div id="header">
+          <div id="nav">
+            <img id="navimg" src="assets/img/close.png">
+          </div>
+          <span id="header-text" style="font-size: 16pt"> J A K E ' S  &nbsp;&nbsp;C O F F E E  &nbsp;&nbsp;S H O P </span>
+          <div id="nav1">
+            <img id="navimg" src="assets/img/close.png">
+          </div>
+        </div>
+        <div id="body">
+          <div id="nav-column">
+            <a class="nav-bar empty"></a>
+            <a class="nav-bar active" id = "home-nav">H O M E</a>
+            <a class="nav-bar" id = "menu-nav">M E N U</a>
+            <a class="nav-bar" id = "music-nav">M U S I C</a>
+            <a class="nav-bar" id = "jobs-nav">J O B S</a>
+          </div>
+          <div id="content-page">
+            <div class = "page current" id="home-page">
+              <div class = "title"><span>H O M E</span></div>
+              <div class = "home section">
+                <div class = "home image-block">
+                  <img src = "assets/img/logo_2.png" style="width:35%; height: auto">
+                </div>
+                <div class = "home headline">
+                  <span class = "tagline" style="text-align: center; margin-top: 3%;">Experience Exceptional Coffee & Community</span>
+                  <div style="width:100%;border-bottom: 3px solid #8c7851;margin-top:3%"></div>
+                  <div style="display:flex;align-items: center;justify-content: center;margin: 3%;"><span class = "about-us">A B O U T &nbsp;&nbsp; U S</span></div>
+                  <div style="padding-left: 10%;padding-right:10%">
+                    <span style="font-size: 2.5vh;text-align:center;display: inline-block;">
+                      Welcome to Jake's Coffee Shop, where every cup tells a story and every sip feels like home. Established by Jake Thompson, a devoted coffee aficionado, our charming shop nestled in the heart of the city is a sanctuary for coffee enthusiasts and community seekers alike.
+                      <br><br>
+                      Inspired by a love for exceptional coffee and a desire to create a welcoming space for our neighbors, Jake's is more than just a coffee shop — it's a hub of connection and camaraderie.From our thoughtfully curated menu featuring handcrafted beverages and delicious treats to our warm and inviting atmosphere, every aspect of Jake's is designed to evoke a sense of comfort and belonging.
+                      <br><br>
+                      Whether you're seeking your morning caffeine fix, catching up with friends over brunch, or simply in need of a quiet moment of reflection, Jake's Coffee Shop is here to welcome you with open arms.Join us for a taste of something extraordinary and discover the magic of Jake's Coffee Shop.
+                      <br><br>
+                    </span>
+                  </div>
+                  <div style="width:100%;border-bottom: 3px solid #8c7851;margin-top:3%;"></div>
+                  <div style="display:flex;align-items: center;justify-content: center;margin: 3%;"><span class = "about-us">T E S T I M O N I A L S</span></div>
+                  <div class = "testimonials">
+                    <div class = "quoteblock">
+                      <div class = "quote">
+                        <span>"Jake's Coffee Shop is my go-to spot for the perfect cup of coffee. The cozy atmosphere and friendly staff make every visit feel like catching up with old friends."</span>
+                      </div>
+                      <div class = "quotee">
+                        <span>- Sarah L.</span>
+                      </div>
+                    </div>
+                    <div class = "quoteblock">
+                      <div class = "quote">
+                        <span>"I stumbled upon Jake's Coffee Shop while exploring the city, and I'm so glad I did! The quality of the coffee is unmatched, and the sense of community is truly special. It's become my favorite spot to unwind and recharge."</span>
+                      </div>
+                      <div class = "quotee">
+                        <span>- Taylor S.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class = "page hidden" id="menu-page">
+              <div class = "title"><span>M E N U</span></div>
+              <div class = "menu section">
+                <div class = "menu headline">
+                  <div class = "tagline">
+                    <span class = "tagline" style="text-align: center;">F R I D A Y &nbsp;&nbsp;S P E C I A L S <br>&nbsp;&nbsp;A T &nbsp;&nbsp;J A K E ' S</span>
+                  </div>
+                  <div style="width:100%;border-bottom: 3px solid #8c7851;margin-top:3%"></div>
+                  <div style="display:flex;align-items: center;justify-content: center;margin: 3%;"><span class = "about-us">E S P R E S S O - B A S E D &nbsp;&nbsp; D R I N K S</span></div>
+                  <div class = "price-list">
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Espresso</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$2.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Double Espresso</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$3.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Macchiato</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$3.00</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Cortado</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$3.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Americano</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$3.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Flat White</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$4.00</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Cappuccino</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$4.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Latte</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$5.00</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Mocha</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$5.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Affogato</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$5.50</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="width:100%;border-bottom: 3px solid #8c7851;margin-top:3%"></div>
+                  <div style="display:flex;align-items: center;justify-content: center;margin: 3%;"><span class = "about-us">S P E C I A L T Y  &nbsp;&nbsp; L A T T E S</span></div>
+                  <div class="price-list">
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Vanilla Latte</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$5.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Caramel Latte</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$5.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Hazelnut Latte</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$5.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Lavender Honey Latte</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$6.00</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Rose Cardamom Latte</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$6.00</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Matcha Latte</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$6.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Turmeric Latte (Golden Milk)</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$6.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Oat Milk Latte</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$6.00</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Almond Milk Latte</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$6.00</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Coconut Milk Latte</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$6.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="width:100%;border-bottom: 3px solid #8c7851;margin-top:3%"></div>
+                  <div style="display:flex;align-items: center;justify-content: center;margin: 3%;"><span class = "about-us">C O L D &nbsp;&nbsp; B R E W S &nbsp;&nbsp; A N D &nbsp;&nbsp; I C E D &nbsp;&nbsp; C O F F E E S</span></div>
+
+                  <div class="price-list">
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Cold Brew</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$4.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Nitro Cold Brew</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$5.00</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Iced Americano</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$4.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Iced Latte</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$5.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Iced Mocha</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$6.00</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Vietnamese Iced Coffee</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$6.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Kyoto-style Iced Coffee</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$6.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Iced Chai Latte</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$6.00</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Iced Matcha Latte</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$6.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Iced Turmeric Latte</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$6.50</span>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div style="width:100%;border-bottom: 3px solid #8c7851;margin-top:3%"></div>
+                  <div style="display:flex;align-items: center;justify-content: center;margin: 3%;"><span class = "about-us">H O U S E  &nbsp;&nbsp; S P E C I A L S</span></div>
+                  <div class="price-list">
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Jake's Signature Blend</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$5.00</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Jake's Special Mocha</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$6.00</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Jake's House Latte</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$5.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Jake's Cinnamon Delight</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$6.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Jake's Coconut Dream</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$6.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Jake's Almond Joy</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$6.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Jake's Peppermint Bliss</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$6.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Jake's Maple Crunch</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$6.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Jake's Cherry Delight</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$6.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Jake's Strawberry Dream</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$6.50</span>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div style="width:100%;border-bottom: 3px solid #8c7851;margin-top:3%"></div>
+                  <div style="display:flex;align-items: center;justify-content: center;margin: 3%;"><span class = "about-us">D E C A F &nbsp;&nbsp; A N D &nbsp;&nbsp; N O N - C O F F E E &nbsp;&nbsp; O P T I O N S</span></div>
+                  <div class="price-list">
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Decaf Espresso</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$3.00</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Decaf Latte</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$5.00</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Decaf Mocha</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$5.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Hot Chocolate</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$4.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Chai Latte</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$5.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Matcha Latte</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$6.00</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Turmeric Latte</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$6.00</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Herbal Tea</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$3.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Chai Tea</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$4.00</span>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div style="width:100%;border-bottom: 3px solid #8c7851;margin-top:3%"></div>
+                  <div style="display:flex;align-items: center;justify-content: center;margin: 3%;"><span class = "about-us">A D D - O N S</span></div>
+                  <div class="price-list">
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Extra Shot of Espresso</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$1.00</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Flavor Shot (Vanilla, Caramel, Hazelnut, etc.)</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$0.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Alternative Milk (Oat, Almond, Coconut)</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$0.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Whipped Cream</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$0.50</span>
+                      </div>
+                    </div>
+
+                    <div class="menu-item">
+                      <div class="item-name">
+                        <span>Chocolate Drizzle</span>
+                      </div>
+                      <div class="broken-lines">
+                      </div>
+                      <div class="price">
+                        <span>$0.50</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class = "page hidden" id="music-page">
+              <div class = "title"><span>M U S I C</span></div>
+              <div class = "music section">
+                <div class = "music headline">
+                  <div style="display:flex;align-items: center;justify-content: center;margin: 3%;"><span class = "about-us">L I S T E N &nbsp;&nbsp; T O &nbsp;&nbsp; O U R &nbsp;&nbsp; L A T E S T &nbsp;&nbsp; R E L E A S E!</span></div>
+                  <div class = "tagline">
+                    <span class = "tagline" style="text-align: center;">T H E &nbsp;&nbsp;T O R T U R E D <br>&nbsp;&nbsp;P O E T S &nbsp;&nbsp;D E P A R T M E N T</span>
+                  </div>
+                  <div style="display:flex;align-items: center;justify-content: center;margin: 3%;"><span class = "about-us">P H Y S I C A L &nbsp;&nbsp; C O P I E S &nbsp;&nbsp; A V A I L A B L E &nbsp;&nbsp; <br>O N L Y &nbsp;&nbsp; A T &nbsp;&nbsp; O U R &nbsp;&nbsp; S T O R E !</span></div>
+                  <div class = "spotify-grid">
+                    <div class = "spotify-line">
+                      <div class = "spotify-song"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2OzhQlSqBEmt7hmkYxfT6m?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+                      <div class = "spotify-song"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3NMrVbIVWT3fPXBj0rNDKG?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+                    </div>
+                    <div class = "spotify-line">
+                      <div class = "spotify-song"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2XXwLdtuAcE0HSCu61ijAb?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+                      <div class = "spotify-song"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2F3N9tdombb64aW6VtZOdo?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+                    </div>
+                    <div class = "spotify-line">
+                      <div class = "spotify-song"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3Vevii7qKqrmW8CcyzBHDl?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+                      <div class = "spotify-song"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5og4Qzt92jJzVDkOtSEilb?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+                    </div>
+                    <div class = "spotify-line">
+                      <div class = "spotify-song"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3fO566xJgwxIa3qGCGBvIC?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+                      <div class = "spotify-song"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3ZVFcD8Wlw9T9klGqmJf9F?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+                    </div>
+                    <div class = "spotify-line">
+                      <div class = "spotify-song"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0W0iAC1VGlB82PI6elxFYf?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+                      <div class = "spotify-song"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/36t6frENUtCYKuZus6aYDO?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+                    </div>
+                    <div class = "spotify-line">
+                      <div class = "spotify-song"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2h3MDMf8sd9s4XIzpTBIjX?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+                      <div class = "spotify-song"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6RSG1dKPV5gEvILwJb4QtS?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+                    </div>
+                    <div class = "spotify-line">
+                      <div class = "spotify-song"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4q5YezDOIPcoLr8R81x9qy?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+                      <div class = "spotify-song"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2v1ivOOsgn64g5OywuH55L?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+                    </div>
+                    <div class = "spotify-line">
+                      <div class = "spotify-song"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1dhMTsEZz6ZEquGvmzVoHn?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+                      <div class = "spotify-song"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1UlhrRvYzbHEyugEDspXUB?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class = "page hidden" id="jobs-page">
+              <div class = "title"><span>J O B S</span></div>
+              <div class = "menu section">
+                <div class = "menu headline">
+                  <div class = "tagline">
+                    <span class = "tagline" style="text-align: center;">C U R R E N T &nbsp;&nbsp;J O B <br>&nbsp;&nbsp;P O S T I N G S</span>
+                  </div>
+                  <div style="padding-left: 10%;padding-right:10%">
+                    <span style="font-size: 2.5vh;text-align:center;display: inline-block;">
+                      <br>
+                      To apply for a job at our coffee shop, please submit your resume and cover letter to jake@jcoffee.com or drop them off in person at our physical store at Cornelia Street. Be sure to indicate the position you are applying for in the subject line or on your application. Read each position below to know their description.
+                      <br>
+                    </span>
+                  </div>
+                  <div style="width:100%;border-bottom: 3px solid #8c7851;margin-top:3%;"></div>
+                  <div style="display:flex;align-items: center;justify-content: center;margin: 3%;">
+                    <div><span class = "about-us">B A R I S T A</span></div>
+                  </div>
+                  <div class="description" style="padding-left: 10%;padding-right:10%;display: inline-block;">
+                    <span style="font-size: 2.5vh;text-align:center;">
+                      -Prepare and serve coffee beverages according to established recipes and standards.<br>
+                      -Provide exceptional customer service by greeting and assisting customers, taking orders, and answering questions.<br>
+                      -Maintain cleanliness and organization of the coffee bar and work areas.<br>
+                      -Operate coffee-making equipment safely and efficiently.<br>
+                      -Previous barista experience preferred but not required.<br>
+                    </span>
+                  </div>
+                  <div style="width:100%;border-bottom: 3px solid #8c7851;margin-top:3%;"></div>
+                  <div style="display:flex;align-items: center;justify-content: center;margin: 3%;">
+                    <span class="about-us">K I T C H E N   &nbsp;&nbsp;S T A F F</span></div>
+                  <div class="description" style="padding-left: 10%;padding-right:10%;display: inline-block;">
+                    <span style="font-size: 2.5vh;text-align:center;">
+                      - Assist with food preparation, including chopping vegetables, preparing sauces, and assembling dishes.<br>
+                      - Operate kitchen equipment safely and efficiently, following all food safety and sanitation guidelines.<br>
+                      - Maintain cleanliness and organization in the kitchen, including washing dishes and sanitizing surfaces.<br>
+                      - Communicate effectively with the rest of the kitchen team to ensure smooth operation during busy periods.<br>
+                      - Previous kitchen experience preferred but not required.<br>
+                    </span>
+                  </div>
+                  <div style="width:100%;border-bottom: 3px solid #8c7851;margin-top:3%;"></div>
+                  <div style="display:flex;align-items: center;justify-content: center;margin: 3%;">
+                    <span class="about-us">A S S I S T A N T   &nbsp;&nbsp;M A N A G E R</span></div>
+                  <div class="description" style="padding-left: 10%;padding-right:10%;display: inline-block;">
+                    <span style="font-size: 2.5vh;text-align:center;">
+                      - Assist with daily operations, including opening and closing procedures, inventory management, and staff supervision.<br>
+                      - Provide leadership and support to the team, including training and development of staff members.<br>
+                      - Ensure compliance with company policies and procedures, as well as health and safety regulations.<br>
+                      - Handle customer inquiries and resolve any issues or complaints in a professional manner.<br>
+                      - Previous supervisory or management experience in the hospitality industry preferred.<br>
+                    </span>
+                  </div>
+                  <div style="width:100%;border-bottom: 3px solid #8c7851;margin-top:3%;"></div>
+                  <div style="display:flex;align-items: center;justify-content: center;margin: 3%;">
+                    <span class="about-us">S E R V E R</span></div>
+                  <div class="description" style="padding-left: 10%;padding-right:10%;display: inline-block;">
+                    <span style="font-size: 2.5vh;text-align:center;">
+                      - Greet customers, take orders, and deliver food and beverages in a timely manner.<br>
+                      - Provide attentive and friendly service to ensure a positive customer experience.<br>
+                      - Assist with cleaning and resetting tables, as well as maintaining cleanliness in the dining area.<br>
+                      - Collaborate with kitchen staff to ensure orders are accurate and delivered promptly.<br>
+                      - Previous restaurant or customer service experience preferred.<br>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div id="footer">
+          <div>
+            <span>Copyright &copy; 2011 Jake's Coffee House |
+            <a href="mailto:jake@jcoffee.com">jake@jcoffee.com</a></span>
+          </div>
+        </div>
+      </div>
+      <script src="assets/js/script.js"></script>
+    </div>
+  </body>
+</html>  

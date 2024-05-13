@@ -1,0 +1,300 @@
+:root {
+	--black: #181818;
+	--white: #f2eedf;
+	--grey1: #cccccc;
+	--grey2: #bbbbbb;
+	--grey3: #aaaaaa;
+}
+
+@font-face {
+  font-family: 'Bagnard';
+  src: url('../fonts/Bagnard.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url('../fonts/Aileron-Thin.otf') format('opentype');
+}
+
+@keyframes disappear {
+	from{
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+		display: none;
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes popup {
+    0%{
+    	transform: scale(1);
+    }
+    50%{
+    	transform: scale(1.4);
+  	}
+  	60%{
+    	transform: scale(1.1);
+  	}
+  	70%{
+    	transform: scale(1.2);
+  	}
+  	80%{
+    	transform: scale(1);
+  	}
+  	90%{
+    	transform: scale(1.1);
+  	}
+  	100%{
+    	transform: scale(1);
+  	}
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	background-color: var(--black);
+	height: 100vh;
+	width: 100vw;
+}
+
+.button-style1 {
+	border: none;
+	box-sizing: border-box;
+	font-family: "Aileron", sans-serif;
+	font-size: 5vh;
+	font-style: normal;
+	margin-right: 20px;
+	padding: 10px;
+	color: var(--white);
+	position: relative;
+	overflow: hidden;
+    display: inline-block;
+    transition: background-color 0.5s ease 0.1s, color 0.5s ease 0.1s;
+    text-align: center;
+}
+
+.button-style1::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--white);
+    transition: width 0.5s ease;
+}
+
+.button-style1:hover::before {
+    width: 100%;
+}
+
+.button-style1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--white);
+    transition: width 0.5s ease;
+}
+
+.button-style1:hover::after {
+    width: 100%;
+}
+
+.button-style1:hover {
+	background-color: var(--white);
+	color: var(--black);
+	cursor: pointer;
+	transition: background-color 0.5s ease 0.5s, color 0.5s ease 0.5s;
+	text-align: center;
+}
+
+.button-style1.exit {
+	background-color: transparent;
+	color: var(--white);
+	animation: disappear 1.5s ease 1s forwards;
+}
+
+.button-style1.exit::before, .button-style1.exit::after  {
+	width: 0%;
+}
+
+.content-page {
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: #18181899;
+	animation: fade-in 2s ease forwards;
+}
+
+.content-page.show{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.heading {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+html {
+	overflow: hidden;
+}
+
+.intro-page {
+	background: linear-gradient(to top, #18181899, #18181899), url('../img/bg.jpg');
+	background-size: cover; 
+	background-repeat: no-repeat; 
+	background-position: center;
+	height: 100vh;
+	width: 100vw;
+	animation: fade-in 5s ease;
+}
+
+.intro-text {
+	position: relative;
+	top: 0%;
+	width: 100%;
+	height: 100%;
+	padding: 2.5%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.intro-text.exit {
+	display: none;
+}
+
+.intro-text div {
+	width: 100%;
+	height: auto;
+	margin: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.intro-text div span {
+	text-align: center;
+	position: relative;
+	font-family: "Bagnard", serif;
+	display: inline-block;
+	color: var(--white);
+	font-size: 10vh;
+
+}
+
+.img-container {
+	max-height: 70%;
+	max-width: 70%;
+}
+
+.img-container img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.main-panel{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.speech-balloon {
+    position: absolute;
+    display: none;
+    background-color: var(--white);
+    border: 1px solid var(--grey1);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    height: auto;
+    width: 20%;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.speech-content {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.speech-content-title {
+    text-align: center;
+    font-family: "Bagnard", serif;
+    font-size: 3vh;
+}
+
+.speech-content-desc {
+    text-align: center;
+    font-family: "Aileron", sans-serif;
+    font-size: 2vh;
+}
+
+.speech-img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.speech-img img {
+	max-width: 100%;
+	height: auto;
+}
+
+.subtitle {
+	margin-bottom: 2.5%;
+}
+
+.subtitle span {
+	display: inline;
+	font-family: "Aileron", sans-serif;
+	font-size: 2vh;
+	color: var(--white);
+}
+
+.title {
+	margin-bottom: 1%;
+}
+
+.title span {
+	display: inline-block;
+	font-family: "Bagnard", serif;
+	font-size: 5vh;
+	color: var(--white);
+}
+
+.welcome.exit {
+	animation: disappear 1.5s ease 1s forwards;
+}

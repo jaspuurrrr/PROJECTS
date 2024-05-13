@@ -1,0 +1,731 @@
+@font-face {
+			    font-family: "Lora";
+			    src: url('Lora.woff') format('woff');
+			}
+
+			body {
+				margin: 0px;
+				padding: 0px;
+				height: 100vh;
+				font-family: "Lora", sans-serif;
+				overflow: auto;
+				background-color: #1c211f;
+				opacity: 1;
+				transition: opacity 0.5s;
+			}
+
+			html {
+			    overflow: hidden;
+			    height: 100%;
+			}
+
+			#frontpage {
+				margin: 0px;
+				padding: 0px;
+				width: 100%;
+				height: 100%;
+				display: flex;
+	        	flex-direction: row;
+	        	position: absolute;
+	        	opacity: 0;
+    			transition: opacity 3s;
+			}
+
+			.ftiles {
+				margin: 0px;
+				width: 20%;
+				height: 100%;
+			}
+
+			.hi {
+				background: linear-gradient(to top, #1c211fb3, #1c211fb3), url('hi2.png');
+				background-size: cover; 
+		        background-repeat: no-repeat; 
+		        background-position: center;
+				width: 300%;
+				position: relative;
+				display: flex;
+	        	flex-direction: column;
+	        	transition: width 0.3s;
+	        	justify-content: center;
+	        	align-items: center;
+			}
+
+			
+
+			.mathtile {
+				background: linear-gradient(to top, #635b3ae6, #635b3ae6), url('math.jpg');
+				background-size: cover; 
+		        background-repeat: no-repeat; 
+		        background-position: center;
+		        position: relative;
+		        display: flex;
+		        text-align: center;
+		        transition: width 0.5s;
+		        justify-content: center;
+	        	align-items: center;
+			}
+
+			.mathtile:hover {
+				width: 35%;
+				transition: width 0.5s;
+				position: relative;
+				display: flex;
+				text-align: center;
+				justify-content: center;
+	        	align-items: center;
+	        	cursor: pointer;
+			}
+
+			.codetile {
+				background: linear-gradient(to top, #a5a396e6, #a5a396e6), url('code.png');
+				background-size: cover; 
+		        background-repeat: no-repeat; 
+		        background-position: center;
+		        position: relative;
+		        display: flex;
+		        text-align: center;
+		        transition: width 0.5s;
+		        justify-content: center;
+	        	align-items: center;
+			}
+
+			.codetile:hover {
+				width: 35%;
+				transition: width 0.5s;
+				position: relative;
+				display: flex;
+				text-align: center;
+				justify-content: center;
+	        	align-items: center;
+	        	cursor: pointer;
+			}
+
+			.musictile {
+				background: linear-gradient(to top, #c7cac4e6, #c7cac4e6), url('music.png');
+				background-size: cover; 
+		        background-repeat: no-repeat; 
+		        background-position: center;
+		        position: relative;
+		        display: flex;
+		        text-align: center;
+		        transition: width 0.5s;
+		        justify-content: center;
+	        	align-items: center;
+			}
+
+			.musictile:hover {
+				width: 35%;
+				transition: width 0.5s;
+				position: relative;
+				display: flex;
+				text-align: center;
+				justify-content: center;
+	        	align-items: center;
+	        	cursor: pointer;
+			}
+
+			.gamestile {
+				background: linear-gradient(to top, #dad0aae6, #dad0aae6), url('games.png');
+				background-size: cover; 
+		        background-repeat: no-repeat; 
+		        background-position: center;
+		        position: relative;
+		        display: flex;
+		        text-align: center;
+		        transition: width 0.5s;
+		        justify-content: center;
+	        	align-items: center;
+			}
+
+			.gamestile:hover {
+				width: 35%;
+				transition: width 0.5s;
+				position: relative;
+				display: flex;
+				text-align: center;
+				justify-content: center;
+	        	align-items: center;
+	        	cursor: pointer;
+			}
+
+			#fbut {
+				position: absolute;
+				top: 85%;
+				
+				transform: translate(0, -50%);
+				text-align: center;
+				justify-content: center;
+	        	align-items: center;
+	        	transform: scale(1.0);
+	        	transition: transform 0.5s;
+			}
+
+			#fbut:hover {
+				cursor: pointer;
+				transform: scale(1.1);
+				transition: transform 0.5s;
+			}
+
+			.arrowbut {
+				width: 75px;
+				height: 75px;
+			}
+
+			.rotate-180 {
+			    transform: rotate(90deg);
+			    transition: transform 0.5s;
+			}
+
+			.ftext {
+				color: #edebe7;
+				opacity: 1;
+				transition: opacity 1s ease-in-out;
+			}
+
+			.intro {
+				position: absolute;
+				top: 10%;
+				text-align: left;
+				font-size: 48px;
+				max-width: 100%; 
+  				font-size: 2vw;
+  				margin: 20px;
+			}
+
+			.big {
+				background-color: #edebe7cc;
+			}
+
+			.name {
+				color: #1c211f;
+				padding: 0px;
+				max-width: 100%; 
+  				font-size: 8vw;
+  				transition: font-size 0.5s;
+			}
+
+			.ido {
+				position: absolute;
+				top: 40%;
+				font-size: 48px;
+				max-width: 100%; 
+  				font-size: 3vw;
+  				margin: 40px;
+
+
+			}
+
+			.panel1 {
+				color: #635b3a;
+				padding: 0px;
+				max-width: 100%; 
+  				font-size: 3vw;
+  				transition: font-size 0.5s;
+			}
+
+			.panel2 {
+				color: #a5a396;
+				padding: 0px;
+				max-width: 100%; 
+  				font-size: 3vw;
+  				transition: font-size 0.5s;
+			}
+
+			.panel3 {
+				color: #c7cac4;
+				padding: 0px;
+				max-width: 100%; 
+  				font-size: 3vw;
+  				transition: font-size 0.5s;
+			}
+
+			.panel4 {
+				color: #dad0aa;
+				padding: 0px;
+				max-width: 100%; 
+  				font-size: 3vw;
+  				transition: font-size 0.5s;
+			}
+
+			.invisible {
+				opacity: 0;
+  				transition: opacity 0.1s ease-in-out;
+			}
+
+			.rotatedtext {
+				transform: rotate(90deg);
+				color: #edebe7;
+				font-size: 3vw;
+				position: relative;
+		        display: flex;
+		        text-align: center;
+		        justify-content: center;
+	        	align-items: center;
+	        	margin: -50px;
+	        	opacity: 0;
+	        	transition: opacity 0.1s ease-in-out;
+			}
+
+			.visible {
+				opacity: 1;
+				transition: opacity 0.1s ease-in-out;
+			}
+
+			#content {
+				background-color: #1c211f;
+				height: 100%;
+			}
+
+			.header {
+				height: 10%;
+				background-color: white;
+				display: flex;
+				flex-direction: row;
+
+			}
+
+			.aboutme {
+				height: 100%;
+				width: 40%;
+				background-color: #1c211f;
+				display: flex;
+				flex-direction: row;
+			}
+
+			#logo-container {
+				width: 50%;
+				border-bottom: 0.1px solid #474747;
+			}
+
+			.math-tab:hover{
+				height: 100%;
+				width: 35%;
+				background-color: #635b3a;
+				text-align: center;
+		        justify-content: center;
+	        	align-items: center;
+	        	display: flex;
+	        	font-size: 3vh;
+	        	border-left: 0.1px solid #474747;
+	        	border-right: 0.1px solid #474747;
+	        	border-bottom: none;
+	        	transition: background-color 1s;
+	        	transition: width 0.5s;
+	        	cursor: pointer;
+			}
+
+			.math-tab.active {
+				background-color: #635b3a;
+				width: 35%;
+				text-align: center;
+		        justify-content: center;
+	        	align-items: center;
+	        	display: flex;
+	        	font-size: 3vh;
+	        	border-left: 0.1px solid #474747;
+	        	border-right: 0.1px solid #474747;
+	        	border-bottom: none;
+	        	transition: background-color 1s;
+	        	transition: width 0.5s;
+	        	cursor: pointer;
+	        }
+
+			.code-tab:hover {
+				height: 100%;
+				width: 35%;
+				background-color: #a5a396;
+				text-align: center;
+		        justify-content: center;
+	        	align-items: center;
+	        	display: flex;
+	        	font-size: 3vh;
+	        	border-left: 0.1px solid #474747;
+	        	border-right: 0.1px solid #474747;
+	        	border-bottom: none;
+	        	transition: background-color 1s;
+	        	transition: width 0.5s;
+	        	cursor: pointer;
+			}
+
+			.code-tab.active {
+				background-color: #a5a396;
+				width: 35%;
+				text-align: center;
+		        justify-content: center;
+	        	align-items: center;
+	        	display: flex;
+	        	font-size: 3vh;
+	        	border-left: 0.1px solid #474747;
+	        	border-right: 0.1px solid #474747;
+	        	border-bottom: none;
+	        	transition: background-color 1s;
+	        	transition: width 0.5s;
+	        	cursor: pointer;
+	        }
+
+			.music-tab:hover {
+				height: 100%;
+				width: 35%;
+				background-color: #c7cac4;
+				text-align: center;
+		        justify-content: center;
+	        	align-items: center;
+	        	display: flex;
+	        	font-size: 3vh;
+	        	border-left: 0.1px solid #474747;
+	        	border-right: 0.1px solid #474747;
+	        	border-bottom: none;
+	        	transition: background-color 1s;
+	        	transition: width 0.5s;
+	        	cursor: pointer;
+			}
+
+			.music-tab:hover span{
+				color: #1c211f;
+				transition: color 0.5s;
+			}
+
+			.music-tab span{
+				transition: color 0.5s;
+			}
+
+			.music-tab.active {
+				background-color: #c7cac4;
+				width: 35%;
+				text-align: center;
+		        justify-content: center;
+	        	align-items: center;
+	        	display: flex;
+	        	font-size: 3vh;
+	        	border-left: 0.1px solid #474747;
+	        	border-right: 0.1px solid #474747;
+	        	border-bottom: none;
+	        	transition: background-color 1s;
+	        	transition: width 0.5s;
+	        	cursor: pointer;
+	        }
+
+	        .music-tab.active span {
+				color: #1c211f;
+				transition: color 0.5s;
+	        }
+
+			.games-tab:hover {
+				height: 100%;
+				width: 35%;
+				background-color: #dad0aa;
+				text-align: center;
+		        justify-content: center;
+	        	align-items: center;
+	        	display: flex;
+	        	font-size: 3vh;
+	        	border-left: 0.1px solid #474747;
+	        	border-right: 0.1px solid #474747;
+	        	border-bottom: none;
+	        	transition: background-color 1s;
+	        	transition: width 0.5s;
+	        	cursor: pointer;
+			}
+
+			.games-tab:hover span{
+				color: #1c211f;
+				transition: color 0.5s;
+			}
+
+			.games-tab span{
+				transition: color 0.5s;
+			}
+
+			.games-tab.active {
+				background-color: #dad0aa;
+				width: 35%;
+				text-align: center;
+		        justify-content: center;
+	        	align-items: center;
+	        	display: flex;
+	        	font-size: 3vh;
+	        	border-left: 0.1px solid #474747;
+	        	border-right: 0.1px solid #474747;
+	        	border-bottom: none;
+	        	transition: background-color 1s;
+	        	transition: width 0.5s;
+	        	cursor: pointer;
+	        }
+
+	        .games-tab.active span {
+				color: #1c211f;
+				transition: color 0.5s;
+	        }
+
+			.content-tab {
+				height: 100%;
+				width: 20%;
+				background-color: #1c211f;
+				text-align: center;
+		        justify-content: center;
+	        	align-items: center;
+	        	display: flex;
+	        	font-size: 3vh;
+	        	
+	        	border-bottom: 0.1px solid #474747;
+	        	transition: background-color 1s;
+	        	transition: width 0.5s;
+			}
+
+			.aboutme-tab {
+				height: 100%;
+				width: 50%;
+				background-color: #1c211f;
+				text-align: center;
+		        justify-content: center;
+	        	align-items: center;
+	        	display: flex;
+	        	font-size: 3vh;
+	        	border-bottom: 0.1px solid #474747;
+	        	transition: background-color 1s;
+	        	transition: width 0.5s;
+	        	float: right;
+			}
+
+			.aboutme-tab:hover, .aboutme-tab .active {
+				height: 100%;
+				width: 92.11%;
+				background-color: #edebe7;
+				text-align: center;
+		        justify-content: center;
+	        	align-items: center;
+	        	display: flex;
+	        	font-size: 3vh;
+	        	border-left: 0.1px solid #474747;
+	        	border-right: 0.1px solid #474747;
+	        	border-bottom: none;
+	        	transition: background-color 1s;
+	        	transition: width 0.5s;
+	        	cursor: pointer;
+	        	float: right;
+			}
+
+			.aboutme-tab span {
+				color: #edebe7;
+				transition: color 1s;
+			}
+
+			.aboutme-tab:hover span {
+				color: #1c211f;
+				transition: color 1s;
+			}
+
+			.header-text {
+				color: #edebe7;
+			}
+
+			#logo {
+				max-width: 100%; 
+  				max-height: 100%;
+  				margin-left: 10%;
+			}
+
+			#logo:hover {
+				max-width: 100%; 
+  				max-height: 100%;
+  				margin-left: 10%;
+  				cursor: pointer;
+			}
+
+			.content-body{
+				background-color: white;
+				height: 90%;
+				width: 100%;
+			}
+
+			.aboutme-content {
+				height: 100%;
+				width: 100%;
+				background-color: #1c211f;
+				opacity: 0;
+				transition: opacity 1s;
+			}
+
+			.math-content {
+				height: 100%;
+				width: 100%;
+				background-color: #635b3a;
+				opacity: 0;
+				transition: opacity 1s;
+			}
+
+			.code-content {
+				height: 100%;
+				width: 100%;
+				background-color: #a5a396;
+				opacity: 0;
+				transition: opacity 1s;
+			}
+
+			.music-content {
+				height: 100%;
+				width: 100%;
+				background-color: #c7cac4;
+				opacity: 0;
+				transition: opacity 1s;
+			}
+
+			.games-content {
+				height: 100%;
+				width: 100%;
+				background-color: #dad0aa;
+				opacity: 0;
+				transition: opacity 1s;
+			}
+
+			.stack {
+				display: flex;
+				flex-direction: row;
+			}
+
+			.vanish {
+				display: none;
+			}
+
+			.current {
+				opacity: 1;
+				transition: opacity 1s;
+			}
+
+			.text-content {
+				width: 50%;
+				height: 90vh;
+				box-sizing: border-box;
+				display: flex;
+		        align-items: center;
+		        justify-content: center;
+		        flex-direction: column;
+		        position: relative;
+			}
+
+			.content-left-panel {
+				width: 50%;
+				height: 90vh;
+				box-sizing: border-box;
+				display: flex;
+		        align-items: center;
+		        flex-direction: column;
+		        position: relative; 
+		     }
+
+			.slider {
+			    width: 80%; 
+			    height: 60%;
+			    position: relative;
+			    top: 10%;
+			}
+
+			.polaroid {
+			    width: 100%;
+			    height: 100%;
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    transform-style: preserve-3d;
+			    transition: transform 0.5s;
+			}
+
+			.polaroid img {
+			    width: 100%;
+			    height: 100%;
+			    object-fit: cover;
+			    border: 10px solid #edebe7; 
+			    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+			    transform: rotateY(0deg) rotateZ(0deg);
+			}
+
+			.slider .polaroid:nth-child(3n+1) {
+			    transform: rotateZ(0deg);
+			}
+
+			.slider .polaroid:nth-child(3n+2) {
+			    transform: rotateZ(5deg);
+			}
+
+			.slider .polaroid:nth-child(3n) {
+			    transform: rotateZ(-5deg); 
+			}
+
+			.slider:hover .polaroid {
+			    transform: rotateY(0deg);
+			}
+
+			.navigator {
+				border-radius: 20px;
+				width: 80%;
+		    	height: 15%;
+		    	top: 95%;
+		    	position: absolute;
+		    	top: 80%;
+		    	display: flex;
+		    	flex-direction: row;
+		    	align-items: center;
+		    	justify-content: space-between;
+			    background-color: rgba(255, 255, 255, 0.2); 
+			}
+
+			.left-arrow,
+			.right-arrow {
+			    width: 40px;
+			    height: 40px;
+			    background-color: rgba(255, 255, 255, 0); 
+			    position: relative;
+			    cursor: pointer;
+			}
+
+			.left-arrow:hover, .right-arrow:hover {
+				cursor: pointer;
+			}
+
+			.left-arrow::after,
+			.right-arrow::after {
+			    content: "";
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+			    border-style: solid;
+			    border-width: 15px 0 15px 15px; 
+			    border-color: transparent transparent transparent #fff; 
+			}
+
+			.left-arrow::after {
+			    transform: translate(-50%, -50%) rotate(180deg); 
+			}
+
+
+
+			.caption {
+			    color: #333;  
+			    font-size: 18px;
+			}
+
+			.caption-text {
+			    color: #edebe7; 
+			}
+
+
+			.body-text{
+				margin-top: 10px;
+				width: 80%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+
+			}
+
+			.body-text span {
+				font-size: 1.75vh;
+				color: #edebe7;
+				text-align: center;
+			}
+
+			.music-content span, .games-content span {
+				color: #1c211f;
+			}
